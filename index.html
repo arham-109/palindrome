@@ -10,24 +10,25 @@
 
 <body>
 
-    <div class="flex justify-center items-center h-screen">
-        <div class=" flex flex-col text-center bg-blue-400 text-white h-[80%] md:w-1/2 rounded-2xl">
-            <h1 class="font-bold text-2xl md:text-5xl mt-16 ">
+    <div class="flex justify-center items-center h-screen font-[cursive]">
+        <div class=" flex flex-col text-center bg-blue-400 text-white h-[80%] w-[80%] md:w-1/2 rounded-2xl">
+            <h1 class="font-bold text-2xl md:text-2xl lg:text-5xl mt-16 ">
                 Is Your Word A Palindrome
             </h1>
-            <form class="flex justify-center items-center text-center flex-col mt-20 gap-5">
-                <input type="text" placeholder="Enter Word"
+            <form onsubmit="check(event)" class="flex justify-center items-center text-center flex-col mt-20 gap-5">
+                <input type="text" placeholder="Enter Word" id="input"
                     class="text-center w-5/6 bg-white text-black outline-none rounded p-4">
-                <button
+                <button type="submit"
                     class="p-4 bg-white text-black text-[18px] rounded-2xl w-1/2 transition-all duration-300 hover:bg-blue-950 hover:shadow-lg hover:shadow-black-500/50 cursor-pointer hover:text-white">
                     Check
                 </button>
             </form>
+
+            <h1 id="output" class="mt-20 text-[20px] lg:text-4xl"></h1>
         </div>
     </div>
 
-
-
+    <script src="script.mjs"></script>
 </body>
 
 </html>
